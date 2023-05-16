@@ -1,0 +1,90 @@
+:root{
+    --blanco: #ffffff;
+    --blanco1: #ffffff00;
+    --oscuro: #a79797;
+    --primario: #ffffff;
+    --secundario: #f19a9a;
+    --gris: #757575;
+    --grisclaro: #dfe9f3;
+    --black: #0c0c0c;
+}
+
+/* Hack para convertir: 1rem = 10px */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'krub', sans-serif;
+    background:linear-gradient(to right, #f09696, #f6ffff);
+}
+
+.sombra{
+    -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    background-color: var(--blanco1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 6.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+
+.pie{
+    color: var(--black);
+    text-align: center;
+}
+
